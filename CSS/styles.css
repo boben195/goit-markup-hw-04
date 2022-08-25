@@ -162,6 +162,8 @@ ol {
   padding-bottom: 200px;
   background-color: #2f303a;
   text-align: center;
+  background-image: 
+   url("../images/herp-title/hero.jpg");
 }
 
 .hero-title {
@@ -269,6 +271,7 @@ ol {
   text-align: center;
   font-size: 16px;
   line-height: 1.19;
+  margin-bottom: 16px;
 }
 
 .div-member {
@@ -285,6 +288,34 @@ ol {
   justify-content: center;
   gap: 30px;
 }
+.member-svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.link-member-svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  gap: 10px;
+  color: #afb1b8;
+  background-color: var(--therd-text-color);
+}
+
+.link-member-svg:hover,
+.link-member-svg:focus {
+  color: var(--therd-text-color);
+  background-color: var(--accent-color);
+}
+.focus-svg {
+  fill: currentColor;
+}
+
 /* ПОCТІЙНІ КЛІЄНТИ */
 .svg-list {
   display: flex;
@@ -416,4 +447,19 @@ ol {
 
 .list-foot {
   margin-bottom: 9px;
+}
+.div-foot-text {
+  display: block;
+  justify-content: center;
+  align-items: baseline;
+}
+.div-h {
+  display: flex;
+  align-items: flex-start;
+}
+
+.div-foot-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
 }
