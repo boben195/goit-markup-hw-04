@@ -160,10 +160,14 @@ ol {
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
-  background-color: #2f303a;
+  background-color: #c4c4c4;
   text-align: center;
-  background-image: 
-   url("../images/herp-title/hero.jpg");
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/herp-title/hero.jpg");
+  background-size: cover;
 }
 
 .hero-title {
@@ -277,6 +281,9 @@ ol {
 .div-member {
   padding: 24px 30px;
   background-color: var(--therd-text-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .cards-color:nth-child(n + 7) {
@@ -386,10 +393,16 @@ ol {
 }
 
 /* головна секція */
+
 .border-li {
   border: 1px solid #eeeeee;
 }
 
+.div-portfolio-cards {
+  padding: 24px 30px;
+  background-color: var(--therd-text-color);
+  border-radius: 0px 0px 4px 4px;
+}
 .portfolio-title {
   color: var(--secondary-text-color);
   font-size: 18px;
@@ -408,10 +421,21 @@ ol {
   gap: 27px;
 }
 
+.shadow-link {
+  color: var(--primary-text-color);
+}
+
+.border-li:hover,
+.border-li:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 /* адреса і контакти для футера тут і задній фон для нього */
 
 .logo-foot {
   display: block;
+  margin-right: 156px;
   margin-bottom: 20px;
   color: var(--therd-text-color);
   font-family: "Raleway", sans-serif;
@@ -444,22 +468,45 @@ ol {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-
+.foot-title {
+  font-size: 14px;
+  line-height: 1.14;
+  color: #ffffff;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
 .list-foot {
   margin-bottom: 9px;
 }
-.div-foot-text {
+
+.top-div {
+  display: flex;
+}
+.div-addres {
   display: block;
-  justify-content: center;
-  align-items: baseline;
 }
 .div-h {
-  display: flex;
-  align-items: flex-start;
+  display: block;
 }
 
-.div-foot-list {
+.link-footer-svg {
   display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  gap: 10px;
+  color: var(--therd-text-color);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.link-footer-svg:hover,
+.link-footer-svg:focus {
+  color: var(--therd-text-color);
+  background-color: var(--accent-color);
+}
+
+.focus-footer-svg {
+  fill: currentColor;
 }
